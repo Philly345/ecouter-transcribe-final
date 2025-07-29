@@ -1,6 +1,7 @@
 ﻿/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   experimental: {
     serverComponentsExternalPackages: ['formidable'],
   },
@@ -25,7 +26,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/home',
+        destination: '/home/',
         permanent: false,
       },
     ]
